@@ -80,7 +80,7 @@ Requirements:
         { status: 502 }
       )
     }
-
+    console.log(`[nudge] client="${clientName}" tier="${nextTierLabel}" gap=${piecesNeeded}`)
     return NextResponse.json({ nudge })
 
   } catch (error) {
