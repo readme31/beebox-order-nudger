@@ -1,0 +1,8 @@
+Never place ANTHROPIC_API_KEY in client-side code. Server routes only.
+Currency is always PHP (₱), never USD.
+Sticker tiers: 500=25, 1000=60, 3000=200, 5000=400, 10000=900.
+Tier qualification is based on total pieces, not peso value.
+All AI calls live in app/api/ only.
+Do not add auth, payments, or a database.
+Keep lib/tierEngine.ts a pure function with no framework imports so it stays unit-testable.
+Nudge tone: warm, conversational Filipino business context, max two sentences.
